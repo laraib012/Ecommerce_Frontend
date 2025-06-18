@@ -510,6 +510,36 @@
     font-size: 0.8rem;
 }
 
+
+.about-section, .contact-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.contact-section {
+    background-color: #f1f3f5;
+}
+
+.contact-section form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-section form button {
+    margin-top: 1rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+
     </style>
 </head>
 <body>
@@ -567,6 +597,38 @@
             </div>
         </div>
     </section>
+
+    <section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Azure Shop</h2>
+        <p style="max-width: 800px; margin: auto; font-size: 1.1rem; line-height: 1.8;">
+            Azure Shop is a modern cloud-powered ecommerce platform built using HTML, CSS, JavaScript, and Microsoft Azure services. 
+            Our goal is to deliver a fast, secure, and scalable shopping experience by utilizing Azure App Service, SQL Database, and Blob Storage.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <form style="max-width: 600px; margin: auto;">
+            <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" required placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
 
     <!-- Cart Sidebar -->
     <div class="cart-section" id="cart-section">
